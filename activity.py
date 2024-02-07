@@ -3,14 +3,16 @@ def my_function():
   name = input("enter your name: ")
   return name
 
-name = my_function()
-
 #2nd function
-def interger():
+def secondFunction():
   age = int(input("enter your age: "))
   return age
 
+def main():
+  name = my_function()
+  age = secondFunction()
 
+  print("My name is:", name)
+  print("I am ", age, " years old.")
 
-
-
+main()
